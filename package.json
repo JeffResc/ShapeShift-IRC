@@ -1,0 +1,28 @@
+{
+  "name": "ShapeShift-IRC",
+  "version": "1.0.0",
+  "description": "ShapeShift.io IRC Bot Interface For Converting Crypto-Currencies",
+  "main": "main.js",
+  "dependencies": {
+    "request": "^2.61.0",
+    "irc": "^0.3.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AlphaT3ch/ShapeShift-IRC.git"
+  },
+  "keywords": [
+    "ShapeShift",
+    "IRC",
+    "Crytpo-Currency",
+    "Bitcoin",
+    "Dogecoin",
+    "Litecoin"
+  ],
+  "author": "AlphaT3ch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlphaT3ch/ShapeShift-IRC/issues"
+  },
+  "homepage": "https://github.com/AlphaT3ch/ShapeShift-IRC"
+}
