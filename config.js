@@ -7,8 +7,10 @@ exports.settings = {
 	globalRealname: "ShapeShift Crypto-Currency Converter",
 	// Command prefix for your bot
 	globalCommandPrefix: "!",
-  	// NickServ Nickname followed by a space-colon followed by the identification message
-	globalNickServIdent: "NickServ :IDENTIFY ShapeShift Password",
+	// Nickname Service's Nick. Usally NickServ
+	globalNickServNick: "NickServ",
+  	// Identification message to send to NickServ
+	globalNickServMsg: "IDENTIFY ShapeShift Password",
 	// Use SASL Authentication?
 	globalSasl: false,
 	// Hostname or IP of the IRC Server
