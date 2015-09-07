@@ -21,7 +21,7 @@ var client = new irc.Client(config.globalNetHostname, config.globalNickname, {
 });
 
 client.addListener('registered', function (msg) {
-  if (config.globalNetSecure == true) {
+  if (config.globalNetSecure === true) {
     console.log("Successfully connected to ".green + config.globalNetHostname.green + " +".green + config.globalNetPort.toString().green);
   } else {
     console.log("Successfully connected to ".green + config.globalNetHostname.green + " " + config.globalNetPort.toString().green);
@@ -104,11 +104,12 @@ function callbackValidPairs(nick) {
   request('https://shapeshift.io/getcoins', function (error, response, body) {
     if (!error && response.statusCode == 200) {
       var obj = JSON.parse(body);
-      var validPairs = Object.keys(obj).map(function(k) { return obj[k] });
-      var outputPairs = new Array();
+      var validPairs = Object.keys(obj).map(function(k) { return obj[k]; });
+      var outputPairs = new Array([]);
       validPairs.forEach(function(coin) {
-        if (coin["symbol"] != "NXT" || coin["symbol"] != "XRP") {
-        outputPairs.push(coin["symbol"]+" ("+coin["name"]+")");
+        if (coin['symbol'] != "NXT" || coin['symbol'] != "XRP") {
+		  outputPairs.push(coin['symbol']+" ("+coin['name']+")");
+		}
       });
       client.say(nick, replaceAll(',', '; ', outputPairs.join()));
     } else {
