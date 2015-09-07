@@ -10,6 +10,7 @@ gulp.task('default', function() {
   gulp.src('./*.md')
     .pipe(markdown())
     .pipe(gulp.dest('./build/markdown'));
+});
 
 gulp.task('watch', function() {
     gulp.watch('./*.js', ['default']);
