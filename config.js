@@ -9,21 +9,22 @@ exports.settings = {
 	globalCommandPrefix: "!",
 	// Nickname Service's Nick. Usally NickServ
 	globalNickServNick: "NickServ",
-  	// Identification message to send to NickServ
+	// Identification message to send to NickServ
 	globalNickServMsg: "IDENTIFY ShapeShift Password",
 	// Use SASL Authentication?
 	globalSasl: false,
 	// Hostname or IP of the IRC Server
-	globalNetHostname: "chat.freenode.net",
+	globalNetHostname: "irc.freenode.net",
 	// Port of The IRC Server (Highly reccomended to use 6697 (SSL) on networks that support it)
 	globalNetPort: 6697,
 	// Use SSL? (Highly reccomended) (set as either true or false with no quotes)
 	globalNetSecure: true,
 	// An array of channels to join
-	globalChannelList: ['#ShapeShift', '##ShapeShift', '###ShapeShift'],
+	globalChannelList: ['##ShapeShift'],
+	// Nickname of Bot owner in case of help
+	globalOwnerNick: "ShapeShift_DEV",
 	// Bind address if you have multiple IP addresses (Leave null if you are not sure, or only have one IP)
 	globalNetAddr: null,
 	// Try to auto rejoin channels?
 	globalAutoRejoin: true,
-	
 }
