@@ -76,8 +76,11 @@ function callbackHelp(nick, info) {
     client.say(nick, config.globalCommandPrefix+"marketinfo <From> <To> - Using the given currency pair, will display rates, transaction fees, etc.");
     client.say(nick, config.globalCommandPrefix+"shift <Send-To-Address (To Coin)> <From> <To> [Return Address (From Coin)] - Using the given currency pair, creates an address to send \"from\" coins to. Converts the from coins to \"to\" coins.");
     client.say(nick, config.globalCommandPrefix+"channels - Shows a list of channels I am currently in.");
+    client.say(nick, config.globalCommandPrefix+"info - Shows bot info.");
     client.say(nick, " ");
-    client.say(nick, "If you need more help, you may use message me \"help <command>\", contact my owner, "+config.globalOwnerNick+", or read the documents/source at https://github.com/AlphaT3ch/ShapeShift-IRC");
+    client.say(nick, "If you need more help, you may use message me \"help <command>\", contact my owner, "+config.globalOwnerNick+", or read the documents/source at https://github.com/Apexton/ShapeShift-IRC");
+    client.say(nick, "NOTE: By using this bot, which includes, but is not limited to: using any of it's features, making transactions and checking rates, that the owner nor any of the bots developers are held reliable for anything that may go wrong during the transaction.");
+    client.say(nick, "NOTE: Though it is very unlikely, a mishap may occur, and will be attempted to be fixed immediately upon notice by a developer.");
   } else if (info == "MAIN" && nick.indexOf("#") != -1) {
     client.say(nick, "Hey "+nick+", I'm ShapeShift, the crypto-currency converter! To view my commands, type /msg "+client.nick+" help");
   } else if (info.replace(config.globalCommandPrefix, '') == "VALIDPAIRS") {
@@ -92,9 +95,12 @@ function callbackHelp(nick, info) {
   } else if (info.replace(config.globalCommandPrefix, '') == "CHANNELS") {
     client.say(nick, config.globalCommandPrefix+"channels - Shows a list of channels I am currently in.");
     client.say(nick, "Example: "+config.globalCommandPrefix+"channels");
+  } else if (info.replace(config.globalCommandPrefix, '') == "CHANNELS") {
+    client.say(nick, config.globalCommandPrefix+"info - Shows bot info.");
+    client.say(nick, "Example: "+config.globalCommandPrefix+"info");
   } else {
     client.say(nick, "No help found for "+toTitleCase(info.replace(config.globalCommandPrefix, '')));
-    client.say(nick, "If you need more help, you may use message me \"help <command>\", contact my owner, "+config.globalOwnerNick+", or read the documents/source at https://github.com/AlphaT3ch/ShapeShift-IRC");
+    client.say(nick, "If you need more help, you may use message me \"help <command>\", contact my owner, "+config.globalOwnerNick+", or read the documents/source at https://github.com/Apexton/ShapeShift-IRC");
   }
 }
 
