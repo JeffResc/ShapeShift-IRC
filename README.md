@@ -5,6 +5,9 @@
 
 This project is currently in developemnt, feel free to check later
 
+# Note
+By using this bot, which includes, but is not limited to: using any of it's features, making transactions and checking rates, that the owner nor any of the bots developers are held reliable for anything that may go wrong during the transaction. Though it is very unlikely, a mishap may occur, and will be attempted to be fixed immediately upon notice by a developer.
+
 # License
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
