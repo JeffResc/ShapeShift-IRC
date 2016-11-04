@@ -15,24 +15,19 @@ exports.settings = {
 	// Identification message to send to NickServ
 	globalNickServMsg: "IDENTIFY ShapeShift Password",
 	// Hostname or IP of the IRC Server
-	globalNetHostname: "irc.caffie.net",
+	globalNetHostname: "irc.myserver.net",
 	// Port of The IRC Server (Highly reccomended to use 6697 (SSL) on networks that support it)
 	globalNetPort: 6697,
 	// Use SSL? (Highly reccomended) (set as either true or false with no quotes)
 	globalNetSecure: true,
 	// An array of channels to join
-	globalChannelList: ['#devtest'],
+	globalChannelList: ['#coins', '#crypto'],
 	// Nickname of Bot owner in case of help
-	globalOwnerNick: "JeffBaker",
+	globalOwnerNick: "Apexton",
 	// List of FULL HOSTNAMES that are allowed to manage the bot - DO NOT INCLUDE NICKNAME - NO WILDCARDS
-	globaladminHosts: ['JeffBaker@caffie-97483D9C.twcny.res.rr.com'],
+	globaladminHosts: ['Whaddup@apexton.github.io', 'ProjectManager@home-localpool.myISP.net'],
 	// Try to auto rejoin channels?
 	globalAutoRejoin: true,
-	
-	////////////////////////////////////////////////////////////////////////////////////////////////////
-	// ADVANCED SETTINGS - Only change these if you're either having problems or are an advanced user //
-	////////////////////////////////////////////////////////////////////////////////////////////////////
-	
 	// Bind address if you have multiple IP addresses (Leave null if you are not sure, or only have one IP)
 	globalNetAddr: null,
 }

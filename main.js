@@ -16,11 +16,12 @@ https.get('https://raw.githubusercontent.com/Apexton/ShapeShift-IRC/master/packa
 					if (err) {
 						console.error(err);
 						process.exit();
-					} else if (JSON.parse(data).version > JSON.parse(body).version) {
+					} else if (JSON.parse(data).version < JSON.parse(body).version) {
 						console.log("[UPDATER] You're running an old version of the bot. For possible security purposes and for new features, we recommend you update.".magenta);
 						console.log("[UPDATER]".magenta+" https://github.com/Apexton/ShapeShift-IRC");
+						console.log(" ");
 					} else {
-						console.log("[UPDATER] You are currently up to date.".magenta)
+						console.log("[UPDATER] You are currently up to date.".magenta);
 					}
 				});
 			});
