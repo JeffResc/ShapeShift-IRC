@@ -1,4 +1,4 @@
-# ShapeShift-IRC
+# ShapeShift-IRC 
 [![Build Status](https://travis-ci.org/Apexton/ShapeShift-IRC.svg?branch=master)](https://travis-ci.org/Apexton/ShapeShift-IRC)
 
 [ShapeShift.io](https://shapeshift.io/) IRC Bot Interface For Converting Crypto-Currencies written in Node.js
