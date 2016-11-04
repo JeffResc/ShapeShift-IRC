@@ -16,6 +16,7 @@ global.callbackValidPairs = function(nick) {
 		});
     } else {
       client.say(nick, "Error fetching valid info. (HTTP Error: "+res.statusCode+")");
+	  console.log("Error fetching valid info. (HTTP Error: ".red+res.statusCode.red+")".red);
     }
   });
 }

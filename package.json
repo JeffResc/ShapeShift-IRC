@@ -1,10 +1,9 @@
 {
   "name": "ShapeShift-IRC",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ShapeShift.io IRC Bot Interface For Converting Crypto-Currencies",
   "main": "main.js",
   "dependencies": {
-    "request": "^2.61.0",
     "irc": "^0.3.12",
     "colors": "^1.1.2"
   },

@@ -44,7 +44,7 @@ global.isBotAdmin = function(nick, r, arg) {
 				}
 			}
 		} else {
-			if (r == "stop" || r == "join") {
+			if (r ==! "help") {
 				client.say(nick, "You do not have access to this command.");
 				console.log(nick.yellow + " tried to use PM command of \""+r.toUpperCase()+"\" - ACCESS DENIED".yellow);
 			}

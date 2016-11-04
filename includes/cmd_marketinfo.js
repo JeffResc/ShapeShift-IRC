@@ -13,6 +13,7 @@ global.callbackMarketInfo = function(nick, text) {
 			});
 		} else {
 			client.say(nick, "Error fetching market info. (HTTP Error: "+res.statusCode+")");
+			console.log("Error fetching market info. (HTTP Error: ".red+res.statusCode.red+")".red)
 		}
 	  });
   } else {
